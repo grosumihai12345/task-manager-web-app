@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema</title>
+  </head>
+  <body>
+    <dialog id="favDialog">
+      <form>
+        <p>
+          <label for="titleInput"
+            >Title: <br />
+            <input
+              type="text"
+              id="titleInput"
+              placeholder="title"
+              maxlength="50"
+              required
+            />
+          </label>
+        </p>
+        <p>
+          <label for="descriptionInput"
+            >Description: <br />
+            <textarea
+              id="descriptionInput"
+              placeholder="description"
+              maxlength="250"
+              required
+            ></textarea>
+          </label>
+        </p>
+        <p>
+          <label for="assigneeInput"
+            >Assignee: <br />
+            <input
+              type="email"
+              id="assigneeInput"
+              placeholder="assignee"
+              required
+            />
+          </label>
+        </p>
+        <div>
+          <button type="button" value="cancel">Cancel</button>
+          <button id="confirmBtn" type="submit" value="default">Confirm</button>
+        </div>
+      </form>
+    </dialog>
+    <p>
+      <button id="showDialog">Add Task</button>
+    </p>
+    <output id="taskOutput"></output>
+    <script src="dialog.js"></script>
+  </body>
+</html>
