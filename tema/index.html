@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Tema</title>
   </head>
   <body>
@@ -49,9 +50,22 @@
       </form>
     </dialog>
     <p>
-      <button id="showDialog">Add Task</button>
+      <a href="#" id="showDialog">
+        <img src="AddTask.png" alt="Add Task" />
+      </a>
     </p>
-    <output id="taskOutput"></output>
+    <div class="tasks-container">
+      <!-- Secțiune pentru taskurile incomplete -->
+      <section>
+        <h1>Incomplete Tasks</h1>
+        <output id="incompleteTasks"></output>
+      </section>
+      <!-- Secțiune pentru taskurile complete -->
+      <section>
+        <h1>Completed Tasks</h1>
+        <output id="completedTasks"></output>
+      </section>
+    </div>
     <script src="dialog.js"></script>
   </body>
 </html>
